@@ -1,0 +1,289 @@
+[
+  {
+    "categoryId": 1,
+    "categoryName": "Молочные продукты и яйца",
+    "icon": "🍶",
+    "items": [
+      { "itemId": 1001, "itemName": "Яйца ovos🥚" },
+      { "itemId": 1002, "itemName": "Молоко leite🥛" },
+      { "itemId": 1003, "itemName": "Сливки Nata" },
+      { "itemId": 1004, "itemName": "Сметана creme fraîche 🍶" },
+      { "itemId": 1005, "itemName": "Йогурт iogurte 🍶" },
+      { "itemId": 1006, "itemName": "Кефир quefir 🍶" },
+      { "itemId": 1007, "itemName": "Творог 🍶" },
+      { "itemId": 1008, "itemName": "Сливочное масло manteiga 🧈" },
+      { "itemId": 1009, "itemName": "Филадельфия" },
+      { "itemId": 1010, "itemName": "Творожный сыр" },
+      { "itemId": 1011, "itemName": "Сыр queijo🧀" },
+      { "itemId": 1012, "itemName": "Сыр натертый" },
+      { "itemId": 1013, "itemName": "Сыр плавленый" }
+    ]
+  },
+  {
+    "categoryId": 2,
+    "categoryName": "Мясо, птица, рыба, морепродукты",
+    "icon": "🥩",
+    "items": [
+      {
+        "itemId": 2001,
+        "itemName": "Мясо на бутерброды presunto (ветчина)"
+      },
+      { "itemId": 2002, "itemName": "Колбаса salsicha" },
+      { "itemId": 2003, "itemName": "Бекон bacon🥓" },
+      { "itemId": 2004, "itemName": "Мясо на суп carne (курица голени 9 шт)" },
+      { "itemId": 2005, "itemName": "Филе бедра (*2) или филе грудки" },
+      { "itemId": 2006, "itemName": "Курица кошке" },
+      { "itemId": 2007, "itemName": "Фарш кошке" },
+      { "itemId": 2008, "itemName": "Курица филе" },
+      { "itemId": 2009, "itemName": "Индейка" },
+      { "itemId": 2010, "itemName": "Тефтели" },
+      { "itemId": 2011, "itemName": "Колбаски на ужин" },
+      {
+        "itemId": 2012,
+        "itemName": "Курица frango🐓 (большая голени, большая крылья)"
+      },
+      { "itemId": 2013, "itemName": "Свинина carne de porco🐷" },
+      { "itemId": 2014, "itemName": "Говядина carne bovina🐮" },
+      { "itemId": 2015, "itemName": "Котлеты для бургеров 🍔" },
+      { "itemId": 2016, "itemName": "Фарш carne picada" },
+      { "itemId": 2017, "itemName": "Рыба на суп" },
+      { "itemId": 2018, "itemName": "Рыба peixe 🐠" },
+      { "itemId": 2019, "itemName": "Морской окунь, Pargo" },
+      { "itemId": 2020, "itemName": "Corvina запекать, жарить" },
+      {
+        "itemId": 2021,
+        "itemName": "Peixe espada (рыба меч) запекать, тушить"
+      },
+      { "itemId": 2022, "itemName": "Морской черт" },
+      { "itemId": 2023, "itemName": "Дорада dourada🐟" },
+      { "itemId": 2024, "itemName": "Креветки camarão 🦐" },
+      { "itemId": 2025, "itemName": "Морепродукты marisco" },
+      { "itemId": 2026, "itemName": "Осьминог" },
+      { "itemId": 2027, "itemName": "Паштет" }
+    ]
+  },
+  {
+    "categoryId": 3,
+    "categoryName": "Овощи, грибы",
+    "icon": "🥕",
+    "items": [
+      { "itemId": 3001, "itemName": "Картошка batata🥔" },
+      { "itemId": 3002, "itemName": "Картошка маленькая batata pequena" },
+      { "itemId": 3003, "itemName": "Морковь cenoura🥕" },
+      { "itemId": 3004, "itemName": "Свекла beterraba" },
+      { "itemId": 3005, "itemName": "Тыква abóbora 🎃" },
+      { "itemId": 3006, "itemName": "Лук cebola🧅" },
+      { "itemId": 3007, "itemName": "Чеснок alho🧄" },
+      { "itemId": 3008, "itemName": "Помидоры tomates🍅" },
+      { "itemId": 3009, "itemName": "Помидоры черри" },
+      { "itemId": 3010, "itemName": "Огурцы pepino 🥒" },
+      { "itemId": 3011, "itemName": "Перец сладкий Pimenta Doce🌶️" },
+      { "itemId": 3012, "itemName": "Капуста белокочанная repolho branco" },
+      { "itemId": 3013, "itemName": "Цветная капуста couve-flor" },
+      { "itemId": 3014, "itemName": "Кабачок, цукини courgette" },
+      { "itemId": 3015, "itemName": "Брокколи brócolis🥦" },
+      { "itemId": 3016, "itemName": "Баклажан beringela🍆" },
+      { "itemId": 3017, "itemName": "Грибы cogumelos 🍄" },
+      { "itemId": 3018, "itemName": "Батат" },
+      { "itemId": 3019, "itemName": "Имбирь gengibre 🫚" },
+      { "itemId": 3020, "itemName": "Авокадо abacate 🥑" },
+      { "itemId": 3021, "itemName": "Горошек" },
+      { "itemId": 3022, "itemName": "Кукуруза 🌽" },
+      { "itemId": 3023, "itemName": "Базилик" }
+    ]
+  },
+  {
+    "categoryId": 4,
+    "categoryName": "Фрукты и ягоды",
+    "icon": "🍒",
+    "items": [
+      { "itemId": 4001, "itemName": "Яблоки maçãs 🍎" },
+      { "itemId": 4002, "itemName": "Ананас" },
+      { "itemId": 4003, "itemName": "Виноград" },
+      { "itemId": 4004, "itemName": "Ягоды" },
+      { "itemId": 4005, "itemName": "Апельсины laranja 🍊" },
+      { "itemId": 4006, "itemName": "Груши pêra 🍐" },
+      { "itemId": 4007, "itemName": "Нектарины nectarina 🍑" },
+      { "itemId": 4008, "itemName": "Лимон lemão 🍋" },
+      {
+        "itemId": 4009,
+        "itemName": "Ягоды замороженные bagas congeladas 🍒🍓"
+      }
+    ]
+  },
+  {
+    "categoryId": 5,
+    "categoryName": "Масло, соусы",
+    "icon": "🏺",
+    "items": [
+      { "itemId": 5001, "itemName": "Растительное масло óleo vegetal 🌻" },
+      { "itemId": 5002, "itemName": "Оливковое масло 🫒" },
+      { "itemId": 5003, "itemName": "Оливковое масло Azeite 🌻🫒" },
+      { "itemId": 5004, "itemName": "Томатная паста polpa de tomate 🍅" },
+      { "itemId": 5005, "itemName": "Зернистая горчица" },
+      { "itemId": 5006, "itemName": "Бальзамический уксус или красный винный" },
+      { "itemId": 5007, "itemName": "Соевый соус molho de soja" },
+      { "itemId": 5008, "itemName": "Майонез" },
+      { "itemId": 5009, "itemName": "Кетчуп" },
+      { "itemId": 5010, "itemName": "Соус для спагетти" },
+      { "itemId": 5011, "itemName": "Соус барбекю" },
+      { "itemId": 5012, "itemName": "Соус для намазки мяса" },
+      { "itemId": 5013, "itemName": "Чесночный соус" },
+      { "itemId": 5014, "itemName": "Терияки" },
+      { "itemId": 5015, "itemName": "Уксус" }
+    ]
+  },
+  {
+    "categoryId": 6,
+    "categoryName": "Бакалея, приправы, специи",
+    "icon": "🫘",
+    "items": [
+      { "itemId": 6001, "itemName": "Мука farinha" },
+      { "itemId": 6002, "itemName": "Макароны" },
+      { "itemId": 6003, "itemName": "Спагетти" },
+      { "itemId": 6004, "itemName": "Вермишель" },
+      { "itemId": 6005, "itemName": "Лапша" },
+      { "itemId": 6006, "itemName": "Рис arroz 🍚" },
+      { "itemId": 6007, "itemName": "Сахар белый açúcar branco" },
+      { "itemId": 6008, "itemName": "Соль sal" },
+      { "itemId": 6009, "itemName": "Соль в солонке🧂" },
+      { "itemId": 6010, "itemName": "Сода" },
+      { "itemId": 6011, "itemName": "Разрыхлитель" },
+      { "itemId": 6012, "itemName": "Паприка páprica" },
+      { "itemId": 6013, "itemName": "Черный перец Pimenta preta" },
+      { "itemId": 6014, "itemName": "4 перца" },
+      { "itemId": 6015, "itemName": "Лавровый лист" },
+      { "itemId": 6016, "itemName": "Кориандр coentro" },
+      { "itemId": 6017, "itemName": "Базилик сушёный" },
+      { "itemId": 6018, "itemName": "Петрушка" },
+      { "itemId": 6019, "itemName": "Чеснок сушёный" },
+      { "itemId": 6020, "itemName": "Кинза" },
+      { "itemId": 6021, "itemName": "Вяленые томаты🥫" },
+      { "itemId": 6022, "itemName": "Маринованные огурцы picles" },
+      { "itemId": 6023, "itemName": "Маринованный перец" }
+    ]
+  },
+  {
+    "categoryId": 7,
+    "categoryName": "Хлеб и выпечка",
+    "icon": "🍞",
+    "items": [
+      { "itemId": 7001, "itemName": "Хлеб pão🍞" },
+      {
+        "itemId": 7002,
+        "itemName": "Круглые булочки с семечками (0.18-0.2) 6шт."
+      },
+      { "itemId": 7003, "itemName": "Багет" },
+      { "itemId": 7004, "itemName": "Хлеб для тостов" },
+      { "itemId": 7005, "itemName": "Булочки для бургеров 🍔" },
+      { "itemId": 7006, "itemName": "Тортилья🫔" },
+      { "itemId": 7007, "itemName": "Кулич" },
+      { "itemId": 7008, "itemName": "Пицца🍕" }
+    ]
+  },
+  {
+    "categoryId": 8,
+    "categoryName": "Сладости и снеки",
+    "icon": "🍭",
+    "items": [
+      { "itemId": 8001, "itemName": "Печенье овсяное" },
+      { "itemId": 8002, "itemName": "Вафли" },
+      { "itemId": 8003, "itemName": "Печенье без сахара" },
+      { "itemId": 8004, "itemName": "Крекер" },
+      { "itemId": 8005, "itemName": "Чипсы salgadinhos" },
+      { "itemId": 8006, "itemName": "Попкорн pipocas 🍿" },
+      { "itemId": 8007, "itemName": "Тирамису" },
+      { "itemId": 8008, "itemName": "Конфеты" },
+      {
+        "itemId": 8009,
+        "itemName": "Печенье с миндалем biscoito com amêndoa 🍪"
+      },
+      { "itemId": 8010, "itemName": "Печенье завитушки" },
+      { "itemId": 8011, "itemName": "Печенье c корицей biscoito🍪" },
+      { "itemId": 8012, "itemName": "Арахисовая паста" },
+      { "itemId": 8013, "itemName": "Мед mel🍯" },
+      { "itemId": 8014, "itemName": "Джем" },
+      { "itemId": 8015, "itemName": "Мороженое gelado 🧊" },
+      { "itemId": 8016, "itemName": "Сгущенка" },
+      { "itemId": 8017, "itemName": "Жвачка" }
+    ]
+  },
+  {
+    "categoryId": 9,
+    "categoryName": "Напитки",
+    "icon": "🍵",
+    "items": [
+      { "itemId": 9001, "itemName": "Минеральная вода água mineral" },
+      { "itemId": 9002, "itemName": "Кола" },
+      { "itemId": 9003, "itemName": "Вода" },
+      { "itemId": 9004, "itemName": "Черный чай Chá preto🍵" },
+      { "itemId": 9005, "itemName": "Зелёный чай Chá verde🍵" },
+      { "itemId": 9006, "itemName": "Кофе café☕️" },
+      { "itemId": 9007, "itemName": "Томатный сок" },
+      { "itemId": 9008, "itemName": "Сок suco🧃" }
+    ]
+  },
+  {
+    "categoryId": 10,
+    "categoryName": "Орехи и семечки",
+    "icon": "🥜",
+    "items": [
+      { "itemId": 10001, "itemName": "Орешки noz 🥜" },
+      { "itemId": 10002, "itemName": "Семечки sementes" },
+      { "itemId": 10003, "itemName": "Семечки тыквенные" },
+      { "itemId": 10004, "itemName": "Фундук avelã" },
+      { "itemId": 10005, "itemName": "Фисташки pistachios" }
+    ]
+  },
+  {
+    "categoryId": 11,
+    "categoryName": "Гигиена, хоз.товары и быт.химия",
+    "icon": "🧻",
+    "items": [
+      { "itemId": 11001, "itemName": "Бумага для запекания" },
+      { "itemId": 11002, "itemName": "Рукав для запекания" },
+      { "itemId": 11003, "itemName": "Пленка пищевая" },
+      { "itemId": 11004, "itemName": "Жидкое мыло" },
+      { "itemId": 11005, "itemName": "Мыло для стирки" },
+      { "itemId": 11006, "itemName": "Зубная паста" },
+      { "itemId": 11007, "itemName": "Шампунь" },
+      { "itemId": 11008, "itemName": "Гель для душа" },
+      { "itemId": 11009, "itemName": "Дезодорант" },
+      { "itemId": 11010, "itemName": "Мыло" },
+      { "itemId": 11011, "itemName": "Фумигатор" },
+      { "itemId": 11012, "itemName": "Тряпочки для ванной для стекла" },
+      { "itemId": 11013, "itemName": "Губки для мытья посуды" },
+      { "itemId": 11014, "itemName": "Прорезиненные тряпочки" },
+      { "itemId": 11015, "itemName": "Бумажные полотенца toalhas de papel" },
+      { "itemId": 11016, "itemName": "Туалетная бумага papel higiênico" },
+      { "itemId": 11017, "itemName": "Влажная т.бумага" },
+      { "itemId": 11018, "itemName": "Салфетки guardanapos" },
+      { "itemId": 11019, "itemName": "Салфетки в коробке" },
+      { "itemId": 11020, "itemName": "Влажные салфетки" },
+      { "itemId": 11021, "itemName": "Ватные диски" },
+      { "itemId": 11022, "itemName": "Пакеты для мусора Sacos de lixo" },
+      { "itemId": 11023, "itemName": "Средство для стирки" },
+      { "itemId": 11024, "itemName": "Кондиционер для белья" },
+      { "itemId": 11025, "itemName": "Таблетки для посудомойки" },
+      { "itemId": 11026, "itemName": "Кондиционер для посудомойки" },
+      { "itemId": 11027, "itemName": "Соль для посудомойки" },
+      { "itemId": 11028, "itemName": "Средство чистящее для унитаза" },
+      { "itemId": 11029, "itemName": "Средство для мытья пола" },
+      { "itemId": 11030, "itemName": "Чистящее средство (Cif)" },
+      { "itemId": 11031, "itemName": "Чистящее средство для труб" },
+      { "itemId": 11032, "itemName": "Насадка для унитаза" },
+      { "itemId": 11033, "itemName": "SPF" },
+      { "itemId": 11034, "itemName": "Освежитель воздуха Ambientador" }
+    ]
+  },
+  {
+    "categoryId": 12,
+    "categoryName": "Прочее",
+    "icon": "🌈",
+    "items": [
+      { "itemId": 12001, "itemName": "Наполнитель 🐈" },
+      { "itemId": 12002, "itemName": "Полотенце" },
+      { "itemId": 12003, "itemName": "Крепление для картин" }
+    ]
+  }
+]
