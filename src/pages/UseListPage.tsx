@@ -4,20 +4,20 @@ import type { Category, Item } from "@/data/Types";
 import { useState } from "react";
 
 function UseListPage({ categories }: { categories: Category[] }) {
-  const [category, setCategory] = useState(-1);
-  const [marked, setMarked] = useState(
-    JSON.parse(localStorage.getItem("markedList") || "[]") as number[]
-  );
-
   const list = JSON.parse(localStorage.getItem("list") || "[]") as number[];
   const categoriesToShow: number[] = [
     ...new Set(list.map((x) => Math.floor(x / 1000))),
   ];
 
-  console.log(categoriesToShow);
+  const [activeCategory, setCategory] = useState(() => {
+    return categoriesToShow.length === 1 ? categoriesToShow[0] : -1;
+  });
+  const [marked, setMarked] = useState(
+    JSON.parse(localStorage.getItem("markedList") || "[]") as number[]
+  );
 
   const getCategory: () => Category = () => {
-    if (category === -1) {
+    if (activeCategory === -1) {
       const allItems: Item[] = categories.flatMap((category) =>
         category.items.filter((item) => list.includes(item.itemId))
       );
@@ -30,7 +30,7 @@ function UseListPage({ categories }: { categories: Category[] }) {
       } as Category;
     }
 
-    const cat = categories[category - 1];
+    const cat = categories[activeCategory - 1];
     return {
       categoryName: cat.categoryName,
       items: cat.items.filter((item) => list.includes(item.itemId)),
@@ -59,7 +59,7 @@ function UseListPage({ categories }: { categories: Category[] }) {
 
   return (
     <>
-      <div className="border-4 rounded-md border-gray-300 dark:border-border p-4 m-1">
+      <div className="border-4 rounded-md border-gray-300 dark:border-border p-4 m-1 bg-gradient-to-br from-muted-foreground/15 to-muted-foreground/25">
         <div className="flex flex-wrap items-center justify-center gap-2 py-4 mx-4 ">
           {categories.map(
             (category) =>
@@ -68,16 +68,20 @@ function UseListPage({ categories }: { categories: Category[] }) {
                   key={category.categoryId}
                   icon={category.icon}
                   clickHandler={() => setCategory(category.categoryId)}
+                  isActive={category.categoryId === activeCategory}
                 />
               )
           )}
-          <ToggleButton
-            key="all"
-            icon="🛒"
-            clickHandler={() => {
-              setCategory(-1);
-            }}
-          />
+          {categoriesToShow.length > 1 && (
+            <ToggleButton
+              key="all"
+              icon="🛒"
+              clickHandler={() => {
+                setCategory(-1);
+              }}
+              isActive={activeCategory === -1}
+            />
+          )}
         </div>
         <div className="flex  flex-col items-center justify-center">
           <CategoryContent

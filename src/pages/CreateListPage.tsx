@@ -12,7 +12,7 @@ function CreateListPage({
   categories: Category[];
   handleCreate: () => void;
 }) {
-  const [category, setCategory] = useState(1);
+  const [activeCategory, setActiveCategory] = useState(1);
 
   const [list, setList] = useState(
     JSON.parse(localStorage.getItem("list") || "[]") as number[]
@@ -24,7 +24,6 @@ function CreateListPage({
     } else {
       setList([...list, itemId]);
     }
-    console.log(list);
   };
 
   const handleCreateList = (list: number[]) => {
@@ -39,41 +38,41 @@ function CreateListPage({
   return (
     <>
       <div className="border-4 rounded-md border-gray-300 dark:border-border p-4 m-1">
+        <div className="flex items-center justify-center my-2 flex-wrap gap-4">
+          <Button
+            className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
+            variant={"outline"}
+            onClick={() => {
+              handleCreateList([]);
+              setList([]);
+            }}
+          >
+            Сбросить
+          </Button>
+          <Button
+            className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
+            onClick={() => handleCreateList(list)}
+          >
+            Создать список
+          </Button>
+        </div>
         <div className="flex flex-wrap items-center justify-center gap-2 py-4 mx-4 ">
           {categories.map((category) => (
             <ToggleButton
               key={category.categoryId}
               icon={category.icon}
-              clickHandler={() => setCategory(category.categoryId)}
+              clickHandler={() => setActiveCategory(category.categoryId)}
+              isActive={category.categoryId === activeCategory}
             />
           ))}
         </div>
         <div className="flex  flex-col items-center justify-center">
           <CategoryContent
-            category={categories[category - 1]}
+            category={categories[activeCategory - 1]}
             list={list}
             toggleItem={toggleItem}
           />
         </div>
-      </div>
-
-      <div className="flex items-center justify-center my-2 flex-wrap gap-4">
-        <Button
-          className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
-          variant={"outline"}
-          onClick={() => {
-            handleCreateList([]);
-            setList([]);
-          }}
-        >
-          Сбросить
-        </Button>
-        <Button
-          className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
-          onClick={() => handleCreateList(list)}
-        >
-          Создать список
-        </Button>
       </div>
     </>
   );
