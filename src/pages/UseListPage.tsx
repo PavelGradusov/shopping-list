@@ -1,4 +1,6 @@
 import CategoryContent from "@/components/CategoryContent";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import ToggleButton from "@/components/ui/ToggleButton";
 import type { Category, Item } from "@/data/Types";
 import { useState } from "react";
@@ -15,6 +17,7 @@ function UseListPage({ categories }: { categories: Category[] }) {
   const [marked, setMarked] = useState(
     JSON.parse(localStorage.getItem("markedList") || "[]") as number[]
   );
+  const [showMarked, setShowMarked] = useState(true);
 
   const getCategory: () => Category = () => {
     if (activeCategory === -1) {
@@ -83,12 +86,26 @@ function UseListPage({ categories }: { categories: Category[] }) {
             />
           )}
         </div>
+
+        <div className="flex items-center justify-end gap-3 mt-4">
+          <Label htmlFor="showMarked" className="text-xl">
+            Показывать отмеченные
+          </Label>
+          <Switch
+            id="showMarked"
+            checked={showMarked}
+            onClick={() => setShowMarked(!showMarked)}
+            className="dark:bg-green-600"
+          />
+        </div>
+
         <div className="flex  flex-col items-center justify-center">
           <CategoryContent
             category={getCategory()}
             list={list}
             disabledList={marked}
             toggleItem={handleMarked}
+            showDisabled={showMarked}
           />
         </div>
       </div>
