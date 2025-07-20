@@ -10,6 +10,11 @@ function UseListPage({ categories }: { categories: Category[] }) {
   );
 
   const list = JSON.parse(localStorage.getItem("list") || "[]") as number[];
+  const categoriesToShow: number[] = [
+    ...new Set(list.map((x) => Math.floor(x / 1000))),
+  ];
+
+  console.log(categoriesToShow);
 
   const getCategory: () => Category = () => {
     if (category === -1) {
@@ -56,13 +61,16 @@ function UseListPage({ categories }: { categories: Category[] }) {
     <>
       <div className="border-4 rounded-md border-gray-300 dark:border-border p-4 m-1">
         <div className="flex flex-wrap items-center justify-center gap-2 py-4 mx-4 ">
-          {categories.map((category) => (
-            <ToggleButton
-              key={category.categoryId}
-              icon={category.icon}
-              clickHandler={() => setCategory(category.categoryId)}
-            />
-          ))}
+          {categories.map(
+            (category) =>
+              categoriesToShow.includes(category.categoryId) && (
+                <ToggleButton
+                  key={category.categoryId}
+                  icon={category.icon}
+                  clickHandler={() => setCategory(category.categoryId)}
+                />
+              )
+          )}
           <ToggleButton
             key="all"
             icon="🛒"
