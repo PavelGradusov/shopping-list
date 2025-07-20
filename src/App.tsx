@@ -6,7 +6,7 @@ import UseListPage from "./pages/UseListPage";
 import data from "@/data/shopping_list.json";
 import type { Category } from "./data/Types";
 
-const categories: Category[] = data;
+const categories: Category[] = data.sort((a, b) => a.order - b.order);
 
 function App() {
   const list = JSON.parse(localStorage.getItem("list") || "[]") as number[];

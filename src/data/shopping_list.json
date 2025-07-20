@@ -3,6 +3,7 @@
     "categoryId": 1,
     "categoryName": "Молочные продукты и яйца",
     "icon": "🍶",
+    "order": 7,
     "items": [
       { "itemId": 1001, "itemName": "Яйца ovos🥚" },
       { "itemId": 1002, "itemName": "Молоко leite🥛" },
@@ -23,6 +24,7 @@
     "categoryId": 2,
     "categoryName": "Мясо, птица, рыба, морепродукты",
     "icon": "🥩",
+    "order": 6,
     "items": [
       {
         "itemId": 2001,
@@ -66,6 +68,7 @@
     "categoryId": 3,
     "categoryName": "Овощи, грибы",
     "icon": "🥕",
+    "order": 1,
     "items": [
       { "itemId": 3001, "itemName": "Картошка batata🥔" },
       { "itemId": 3002, "itemName": "Картошка маленькая batata pequena" },
@@ -96,6 +99,7 @@
     "categoryId": 4,
     "categoryName": "Фрукты и ягоды",
     "icon": "🍒",
+    "order": 2,
     "items": [
       { "itemId": 4001, "itemName": "Яблоки maçãs 🍎" },
       { "itemId": 4002, "itemName": "Ананас" },
@@ -115,6 +119,7 @@
     "categoryId": 5,
     "categoryName": "Масло, соусы",
     "icon": "🏺",
+    "order": 8,
     "items": [
       { "itemId": 5001, "itemName": "Растительное масло óleo vegetal 🌻" },
       { "itemId": 5002, "itemName": "Оливковое масло 🫒" },
@@ -137,6 +142,7 @@
     "categoryId": 6,
     "categoryName": "Бакалея, приправы, специи",
     "icon": "🫘",
+    "order": 9,
     "items": [
       { "itemId": 6001, "itemName": "Мука farinha" },
       { "itemId": 6002, "itemName": "Макароны" },
@@ -167,6 +173,7 @@
     "categoryId": 7,
     "categoryName": "Хлеб и выпечка",
     "icon": "🍞",
+    "order": 5,
     "items": [
       { "itemId": 7001, "itemName": "Хлеб pão🍞" },
       {
@@ -185,6 +192,7 @@
     "categoryId": 8,
     "categoryName": "Сладости и снеки",
     "icon": "🍭",
+    "order": 4,
     "items": [
       { "itemId": 8001, "itemName": "Печенье овсяное" },
       { "itemId": 8002, "itemName": "Вафли" },
@@ -212,6 +220,7 @@
     "categoryId": 9,
     "categoryName": "Напитки",
     "icon": "🍵",
+    "order": 11,
     "items": [
       { "itemId": 9001, "itemName": "Минеральная вода água mineral" },
       { "itemId": 9002, "itemName": "Кола" },
@@ -225,20 +234,30 @@
   },
   {
     "categoryId": 10,
-    "categoryName": "Орехи и семечки",
+    "categoryName": "Орехи, семечки и сухофрукты",
     "icon": "🥜",
+    "order": 3,
     "items": [
-      { "itemId": 10001, "itemName": "Орешки noz 🥜" },
-      { "itemId": 10002, "itemName": "Семечки sementes" },
-      { "itemId": 10003, "itemName": "Семечки тыквенные" },
-      { "itemId": 10004, "itemName": "Фундук avelã" },
-      { "itemId": 10005, "itemName": "Фисташки pistachios" }
+      { "itemId": 10001, "itemName": "Грецкие орехи" },
+      { "itemId": 10002, "itemName": "Арахис 🥜" },
+      { "itemId": 10003, "itemName": "Миндаль" },
+      { "itemId": 10004, "itemName": "Семечки sementes" },
+      { "itemId": 10005, "itemName": "Семечки тыквенные" },
+      { "itemId": 10006, "itemName": "Фундук avelã" },
+      { "itemId": 10007, "itemName": "Фисташки pistachios" },
+      { "itemId": 10008, "itemName": "Курага" },
+      { "itemId": 10009, "itemName": "Изюм" },
+      { "itemId": 10010, "itemName": "Финики" },
+      { "itemId": 10011, "itemName": "Чернослив" },
+      { "itemId": 10012, "itemName": "Сушёные ананасы" },
+      { "itemId": 10013, "itemName": "Сушёное манго" }
     ]
   },
   {
     "categoryId": 11,
     "categoryName": "Гигиена, хоз.товары и быт.химия",
     "icon": "🧻",
+    "order": 10,
     "items": [
       { "itemId": 11001, "itemName": "Бумага для запекания" },
       { "itemId": 11002, "itemName": "Рукав для запекания" },
@@ -280,6 +299,7 @@
     "categoryId": 12,
     "categoryName": "Прочее",
     "icon": "🌈",
+    "order": 12,
     "items": [
       { "itemId": 12001, "itemName": "Наполнитель 🐈" },
       { "itemId": 12002, "itemName": "Полотенце" },
