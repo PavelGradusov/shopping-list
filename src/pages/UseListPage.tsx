@@ -33,7 +33,7 @@ function UseListPage({ categories }: { categories: Category[] }) {
       } as Category;
     }
 
-    const cat = categories[activeCategory - 1];
+    const cat = categories.find((cat) => cat.categoryId === activeCategory)!;
     return {
       categoryName: cat.categoryName,
       items: cat.items.filter((item) => list.includes(item.itemId)),

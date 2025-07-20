@@ -5,6 +5,7 @@ import UseListPage from "./pages/UseListPage";
 
 import data from "@/data/shopping_list.json";
 import type { Category } from "./data/Types";
+import { Toaster } from "sonner";
 
 const categories: Category[] = data.sort((a, b) => a.order - b.order);
 
@@ -40,6 +41,7 @@ function App() {
       ) : (
         <UseListPage categories={categories} />
       )}
+      <Toaster richColors position="top-right" />
     </div>
   );
 }

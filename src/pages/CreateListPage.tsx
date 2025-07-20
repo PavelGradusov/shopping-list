@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import CategoryContent from "@/components/CategoryContent";
 import ToggleButton from "@/components/ui/ToggleButton";
 import type { Category } from "@/data/Types";
+import { toast } from "sonner";
 
 function CreateListPage({
   categories,
@@ -12,7 +13,7 @@ function CreateListPage({
   categories: Category[];
   handleCreate: () => void;
 }) {
-  const [activeCategory, setActiveCategory] = useState(1);
+  const [activeCategory, setActiveCategory] = useState(3);
 
   const [list, setList] = useState(
     JSON.parse(localStorage.getItem("list") || "[]") as number[]
@@ -30,9 +31,11 @@ function CreateListPage({
     localStorage.setItem("list", JSON.stringify(list));
     localStorage.setItem("markedList", JSON.stringify([]));
     if (list.length === 0) {
+      toast.success("Список очищен!");
       return;
     }
     handleCreate();
+    toast.success("Список успешно создан!");
   };
 
   return (
@@ -68,7 +71,9 @@ function CreateListPage({
         </div>
         <div className="flex  flex-col items-center justify-center">
           <CategoryContent
-            category={categories[activeCategory - 1]}
+            category={
+              categories.find((cat) => cat.categoryId === activeCategory)!
+            }
             list={list}
             toggleItem={toggleItem}
           />

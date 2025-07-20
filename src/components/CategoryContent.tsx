@@ -20,6 +20,7 @@ function CategoryContent({
     : category.items.filter((item) => !disabledList?.includes(item.itemId));
 
   console.log(listToShow);
+  console.log(disabledList);
 
   return (
     <div key={category.categoryId}>
