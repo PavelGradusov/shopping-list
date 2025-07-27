@@ -15,23 +15,26 @@ function App() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex items-center justify-center flex-wrap gap-3 my-4">
-        <Button
-          className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
-          onClick={() => setCreate(true)}
-          variant={create ? "outline" : "default"}
-          disabled={create}
-        >
-          Создать/Редактировать
-        </Button>
-        <Button
+      <div className="flex items-center justify-start flex-wrap gap-3 my-4 px-8">
+        {!create && (
+          <Button
+            className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
+            onClick={() => setCreate(true)}
+            variant={create ? "outline" : "default"}
+            disabled={create}
+          >
+            Редактировать
+          </Button>
+        )}
+
+        {/* <Button
           className="transition-all duration-200 hover:-translate-y-1 active:translate-y-0 hover:shadow-lg my-4 text-2xl px-8 py-6 select-none"
           onClick={() => setCreate(false)}
           variant={!create ? "outline" : "default"}
           disabled={!create}
         >
           Использовать
-        </Button>
+        </Button> */}
       </div>
       {create ? (
         <CreateListPage

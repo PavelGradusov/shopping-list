@@ -48,7 +48,7 @@ function CreateListPage({
       .readText()
       .then((text) => {
         setList(JSON.parse(text) as number[]);
-        toast.success("Список успешно вставлен! Не забудьте его сохранить!");
+        toast.success("Список успешно загружен!");
       })
       .catch((error) => {
         console.error("Failed to read clipboard contents:", error);
